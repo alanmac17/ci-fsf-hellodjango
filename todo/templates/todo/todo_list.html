@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <H1>Things I need to do</H1>
+    <h1>Things I need to do</h1>
+    <table>
+     {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.done }}</td>
+        </tr>
+     {% endfor %}
+    </table>
 </body>
 </html>
